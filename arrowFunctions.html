@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html version="1.0" encoding="UTF-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <title> Arrow Functions</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <h1>Arrow Functions</h1>
+    <p>Open Console</p>
+
+    <script type="text/javascript">
+        const lordify = function(firstName) {
+            return `${firstName} of Eswatini`;
+        }
+        console.log(lordify("Mlondi"))
+
+
+        //arrow function below
+        const br = "<br>"
+        const lord = (name, surname) => `Name: ${name} \nSurname: ${surname} `;
+
+        console.log(lord("Mlondi", "Mchunu"))
+    </script>
+</body>
+
+</html>

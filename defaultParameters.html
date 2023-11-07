@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <title>Default Parameters</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <h1>Default Parameters</h1>
+    <p>Open the console</p>
+
+    <script type="text/javascript">
+        const defaultPerson = {
+            name: {
+                first: "Mlondi",
+                last: "Mchunu"
+            },
+            favActivity: "football"
+        };
+
+        function logActivity(person = defaultPerson) {
+            console.log(`${person.name.first} ${person.name.last} loves ${person.favActivity}`)
+        }
+        logActivity()
+    </script>
+</body>
+
+</html>
