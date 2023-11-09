@@ -24,6 +24,25 @@
         const lord = (name, surname) => `Name: ${name} \nSurname: ${surname} `;
 
         console.log(lord("Mlondi", "Mchunu"))
+
+
+        //multiple lines
+        const lord2 = (name, land) => {
+            if (!name) {
+                throw new Error('A first name is required')
+            }
+            if (!land) {
+                throw new Error('A lord must have a land')
+            }
+            return `${name} of ${land}`
+        }
+
+        console.log(lord2("Jeff", "Mankayane"));
+        console.log(lord2("Dave"));
+
+
+        const lord3 = (first, last) => `${first}\n ${last}`;
+        console.log(lord3("South", "Africa"));
     </script>
 </body>
 
